@@ -175,6 +175,10 @@ Logistic Regression adalah model yang sederhana namun efektif untuk masalah klas
 **Kekurangan**:
 - Tidak bekerja optimal jika data memiliki pola yang kompleks atau non-linear.
 
+#### **Cara Kerja**:
+1. Model mempelajari hubungan antara fitur input dan target selama pelatihan.
+2. Probabilitas diprediksi untuk setiap data.
+3. Jika probabilitas lebih tinggi dari ambang batas (default 0.5), data diklasifikasikan sebagai positif (diabetes). Jika tidak, diklasifikasikan sebagai negatif (tidak diabetes).
 ---
 
 ### 2. Random Forest
@@ -195,6 +199,10 @@ Random Forest adalah model ensemble yang menggabungkan banyak pohon keputusan un
 **Kekurangan**:
 - Membutuhkan lebih banyak sumber daya komputasi.
 
+#### **Cara Kerja**:
+1. Dataset dibagi menjadi beberapa subset secara acak.
+2. Setiap subset digunakan untuk melatih pohon keputusan independen.
+3. Prediksi akhir ditentukan melalui voting mayoritas dari semua pohon.
 ---
 
 ### 3. Support Vector Machine (SVM)
@@ -216,6 +224,9 @@ SVM adalah algoritma yang mencoba memisahkan data dengan hyperplane optimal di r
 - Tidak efisien pada dataset besar.
 - Memerlukan tuning parameter yang kompleks.
 
+#### **Cara Kerja**:
+1. SVM mencari hyperplane yang memisahkan dua kelas dengan jarak terbesar (margin) dari data terdekat.
+2. Jika data tidak dapat dipisahkan secara langsung, SVM menggunakan kernel untuk mengubah data ke dimensi yang lebih tinggi, di mana pemisahan dapat dilakukan.
 ---
 
 ### 4. Deep Learning
@@ -238,6 +249,12 @@ Model deep learning menggunakan **Neural Network** dengan arsitektur sederhana y
 **Kekurangan**:
 - Membutuhkan waktu pelatihan yang lebih lama.
 - Interpretasi model lebih sulit dibanding model lainnya.
+
+#### **Cara Kerja**:
+1. Data masuk melalui lapisan input dan diproses melalui beberapa lapisan tersembunyi.
+2. Setiap lapisan menerapkan fungsi aktivasi untuk menangkap pola non-linear dalam data.
+3. Lapisan output memberikan prediksi probabilitas.
+4. Model dilatih melalui proses iteratif untuk meminimalkan kesalahan prediksi.
 
 ---
 
